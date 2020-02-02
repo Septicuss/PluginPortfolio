@@ -1,0 +1,7 @@
+name: Playtime
+description: Playtime
+version: 1.0
+main: me.Septicuss.Playtime
+
+commands:
+  playtime:
