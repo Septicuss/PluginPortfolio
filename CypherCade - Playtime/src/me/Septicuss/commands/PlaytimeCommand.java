@@ -69,6 +69,7 @@ public class PlaytimeCommand implements CommandExecutor {
 			new DatabaseManager().initialize();
 
 			sender.sendMessage("§aReloaded");
+			return true;
 		}
 
 		// -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- //

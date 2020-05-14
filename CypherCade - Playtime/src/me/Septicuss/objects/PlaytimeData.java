@@ -44,7 +44,7 @@ public class PlaytimeData {
 	 */
 	public String getFormattedTime() {
 
-		final String format = new Files().getFile(FileType.CONFIG).getString("setting.time_format");
+		String format = new Files().getFile(FileType.CONFIG).getString("setting.time_format");
 
 		long s = seconds;
 		long m = 0;
@@ -65,8 +65,33 @@ public class PlaytimeData {
 			h -= 24;
 		}
 
-		return format.replaceAll("%s%", "" + s).replaceAll("%m%", "" + m).replaceAll("%h%", "" + h).replaceAll("%d%",
-				"" + d);
+		format = format.replaceAll(" ", "");
+
+		if (s != 0) {
+			format = format.replaceAll("%s%", s + " seconds ");
+		}
+
+		format = format.replace("%s%", "");
+
+		if (m != 0) {
+			format = format.replaceAll("%m%", m + " minutes ");
+		}
+
+		format = format.replace("%m%", "");
+
+		if (h != 0) {
+			format = format.replaceAll("%h%", h + " hours ");
+		}
+
+		format = format.replace("%h%", "");
+
+		if (d != 0) {
+			format = format.replaceAll("%d%", d + " days ");
+		}
+
+		format = format.replace("%d%", "");
+
+		return format;
 
 	}
 

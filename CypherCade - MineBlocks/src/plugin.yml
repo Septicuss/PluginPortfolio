@@ -1,0 +1,8 @@
+name: MineBlocks
+description: MineBlocks plugin
+version: 1
+main: me.Septicuss.MineBlocks
+
+commands:
+  mineblocks:
+      aliases: [mineblock]

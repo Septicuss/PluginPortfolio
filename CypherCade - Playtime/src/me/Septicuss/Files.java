@@ -40,7 +40,7 @@ public class Files {
 
 	private void setDefaults() {
 		CONFIG_CONFIG.addDefault("setting.uuid_based", true);
-		CONFIG_CONFIG.addDefault("setting.time_format", "%d% days %h% hours %m% minutes %s% seconds");
+		CONFIG_CONFIG.addDefault("setting.time_format", "%d%%h%%m%%s%");
 
 		CONFIG_CONFIG.addDefault("messages.unknown_player", Arrays.asList("§cSpecified player could not be found."));
 		CONFIG_CONFIG.addDefault("messages.playtime_command", Arrays.asList("%player% has played for :", "%playtime%"));
