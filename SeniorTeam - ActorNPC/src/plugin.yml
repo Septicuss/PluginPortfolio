@@ -1,0 +1,7 @@
+name: ActorNPC
+description: ActorNPC
+version: 1.0.0
+main: me.Septicuss.ActorNPC
+
+commands:
+  actornpc:
